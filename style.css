@@ -4,18 +4,20 @@
     border: border-box;
 }
 
+
+
 #container::before{
     content: '';
     position: absolute;
     left:0;
     top: 0;
-    background-image: url("/images/main.png");
+    background-image: url("/images/pokebg.jpg");
     background-size: cover;
     background-position:center;
     height: 300px;
     width: 100%;
     z-index: -1;
-    background-color: black;
+ 
 }
 
 #container{
@@ -24,7 +26,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
     color: white;
 }
 
@@ -41,9 +42,8 @@
 #search {
     height : 20px;
     width: 530px;
-    border: 2px solid black;
     border-radius: 1.5rem;
-    padding: 1rem 0.3rem 0.8rem 0.8rem;
+    padding: 1rem 0.3rem 1rem 0.8rem;
     display: flex;
     align-items: center;
     background-color: white;
@@ -51,17 +51,20 @@
 
 #search input{
     border: none;
+    height: 100%;
     width: 60%;
     font-size: 1rem;
     height: 1.6rem;
-    background: transparent;
+    background: none;
+    outline: none;
 }
 
 #search select{
     border: none;
     width: 15%;
     margin-right: 12px;
-    background: transparent;
+    background: none;
+    outline: none;
     font-size: 1rem;
 }
 
@@ -75,6 +78,7 @@
     font-size: 1rem;
     background-color: rgb(117, 20, 235);
     color: white;
+    cursor: pointer;
 }
 
 #images{
