@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ai image generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div id="container">
-            <h1>Ai image generator tool using javascript</h1>
-            <pre>convert your text into an image within seconds using this 
-        JavaScript-Powered Ai image generator tool</pre>
+            <h1>AI image generator tool using javascript</h1>
+              <pre>Convert your text into an image within seconds using this
+                 JavaScript-Powered Ai image generator tool</pre>
             <div id="search">
-                <input type="text" placeholder="Describe what you want to see">
+                <input id="search-prompt" type="text" placeholder="Describe what you want to see">
                 <select name="number" id="dropdown">
-                    <option value="1 image">1 image</option>
-                    <option value="2 images">2 images</option>
-                    <option value="3 images">3 images</option>
-                    <option value="4 images">4 images</option>
+                    <option value="1">1 image</option>
+                    <option value="2">2 images</option>
+                    <option value="3">3 images</option>
+                    <option value="4">4 images</option>
                 </select>
                 <button id="btn">Generate</button>
             </div>
@@ -34,5 +37,6 @@
             </div>
         </main>
      </section>
+     <script src="script.js"></script>
 </body>
 </html>
